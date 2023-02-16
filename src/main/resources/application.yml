@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      platform: postgres
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/msuser
+    username: postgres
+    password: 1234
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+github:
+  token: Bearer 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
+
